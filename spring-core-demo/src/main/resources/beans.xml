@@ -28,7 +28,7 @@
 	</bean>
 
 	<!-- constructor injection -->
-	<bean id="movieCnstr" class="com.jlearn.spring.bean.Movie">
+	<bean id="movieCnstr" class="com.jlearn.spring.bean.Movie" scope="singleton">
 		<constructor-arg name="name" value="The Jungle Book" />
 		<constructor-arg name="theater" value="Satyam Palazzo" />
 	</bean>

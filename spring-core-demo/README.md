@@ -19,19 +19,19 @@
 
 ## Bean Scope
 - singleton 
-    - Only one instance of the bean will be created for each container. 
-    - This is the default scope for the spring beans. 
-    - bean doesn’t have shared instance variables otherwise it might lead to data inconsistency issues.
+    1. Only one instance of the bean will be created for each container. 
+    2. This is the default scope for the spring beans. 
+    3. bean doesn’t have shared instance variables otherwise it might lead to data inconsistency issues.
 	 
-- prototype 
-	 – A new instance will be created every time the bean is requested.
-	 	
-- request 
-     – This is same as prototype scope, however it’s meant to be used for web applications. 
-     - A new instance of the bean will be created for each HTTP request.
+- prototype
+    1. A new instance will be created every time the bean is requested.
+
+- request
+    1. This is same as prototype scope, however it’s meant to be used for web applications.
+    2. A new instance of the bean will be created for each HTTP request.
           
-- session 
-     – A new bean will be created for each HTTP session by the container.
+- session
+    1. A new bean will be created for each HTTP session by the container.
      
-- global-session 
-     – This is used to create global session beans for Portlet applications.
+- global-session
+    1. This is used to create global session beans for Portlet applications.
