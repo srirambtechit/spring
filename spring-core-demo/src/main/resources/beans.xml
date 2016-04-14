@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+	<!-- setter injection -->
+	<bean id="address" class="com.jlearn.spring.bean.Address">
+		<property name="id" value="100" />
+		<property name="doorNumber" value="1" />
+		<property name="street" value="Kamarajar salai main road" />
+		<property name="area" value="R.A.Puram" />
+		<property name="city" value="Chennai" />
+		<property name="pinCode" value="600012" />
+		<property name="Country" value="India" />
+	</bean>
+
+	<!-- setter injection with referencing another bean(here it is Address) -->
+	<bean id="employee" class="com.jlearn.spring.bean.Employee">
+		<property name="id" value="100000" />
+		<property name="name" value="Michael Jackson" />
+		<property name="address" ref="address" />
+	</bean>
+
+	<!-- constructor injection -->
+	<bean id="movieCnstr" class="com.jlearn.spring.bean.Movie">
+		<constructor-arg name="name" value="The Jungle Book" />
+		<constructor-arg name="theater" value="Satyam Palazzo" />
+	</bean>
+
+	<!-- setter injection -->
+	<bean id="movieSetter" class="com.jlearn.spring.bean.Movie">
+		<property name="name" value="Iruthi Suttru" />
+		<property name="theater" value="PVR Cinemas Velachery" />
+	</bean>
+
+</beans>
