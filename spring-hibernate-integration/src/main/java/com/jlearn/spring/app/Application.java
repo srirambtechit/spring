@@ -13,7 +13,7 @@ public class Application {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
 		EmployeeDAO employeeDAO = context.getBean(EmployeeDAO.class);
 		Employee employee = new Employee();
-		employee.setName("Sriram");
+		employee.setName("Gopi");
 		employee.setSalary(1000.25f);
 		employeeDAO.save(employee);
 		System.out.println("Employee saved : " + employee);
