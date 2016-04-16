@@ -3,6 +3,36 @@
 ## Spring Container
 - It is a place where Spring maintain object life cycle
 
+## Modules
+Spring-Context
+Spring-AOP
+Spring-MVC
+Spring-JDBC
+Spring-DAO
+Spring-ORM
+
+## Spring-core
+- Dependency Injection
+- Inversion of Control
+
+
+## Spring-AOP
+- Cross cutting concerns
+- Aspect
+- Pointcut
+- Joinpoint
+- Advice 
+    - Before Advice
+    - After Advice
+    - After Returning Advice
+    - After Throwing Advice
+    - Around Advice
+    
+- Target object
+- Proxy object (JDK dynamic proxy, cglib proxy)
+- Weaving (compile time, load time, runtime) Spring supports only at runtime
+
+
 ## Different context
 - BeanFactory
 - ApplicationContext 
@@ -35,3 +65,9 @@
      
 - global-session
     1. This is used to create global session beans for Portlet applications.
+
+## Autowiring
+- byName: happens on by variable name
+- byType: happens by data type of variable (ex: java.lang.String)
+- by constructor: bean class's constructor
+- @Autowired and @Qualifier: annotation based wiring
