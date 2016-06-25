@@ -2,7 +2,7 @@ package com.msrm.springframeworks.dao;
 
 import java.util.List;
 
-import com.msrm.springframeworks.bean.Student;
+import com.msrm.springframeworks.dos.Student;
 
 public interface StudentDAO {
 

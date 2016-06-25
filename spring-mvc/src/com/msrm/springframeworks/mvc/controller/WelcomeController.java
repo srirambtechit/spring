@@ -12,5 +12,10 @@ public class WelcomeController {
 		String message = "Welcome to Spring MVC World";
 		return new ModelAndView("welcomePage", "msg", message);
 	}
+	
+	@RequestMapping("/hello")
+	public ModelAndView helloPage() {
+		return new ModelAndView("helloPage", "var", "hi");
+	}
 
 }
