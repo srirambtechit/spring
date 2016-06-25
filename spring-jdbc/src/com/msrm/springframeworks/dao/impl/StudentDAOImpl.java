@@ -1,4 +1,4 @@
-package com.learning.spring.dao;
+package com.msrm.springframeworks.dao.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,8 @@ import java.util.Map;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import com.learning.spring.bean.Student;
+import com.msrm.springframeworks.bean.Student;
+import com.msrm.springframeworks.dao.StudentDAO;
 
 public class StudentDAOImpl implements StudentDAO {
 

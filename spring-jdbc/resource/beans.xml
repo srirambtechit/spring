@@ -9,14 +9,14 @@
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="jdbc:mysql://localhost:3306/demo" />
 		<property name="username" value="root" />
-		<property name="password" value="root" />
+		<property name="password" value="Root123$" />
 	</bean>
 
 	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
 		<property name="dataSource" ref="ds" />
 	</bean>
 
-	<bean id="studentDAO" class="com.learning.spring.dao.StudentDAOImpl">
+	<bean id="studentDAO" class="com.msrm.springframeworks.dao.impl.StudentDAOImpl">
 		<property name="jdbcTemplate" ref="jdbcTemplate" />
 	</bean>
 

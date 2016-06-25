@@ -1,8 +1,8 @@
-package com.learning.spring.dao;
+package com.msrm.springframeworks.dao;
 
 import java.util.List;
 
-import com.learning.spring.bean.Student;
+import com.msrm.springframeworks.bean.Student;
 
 public interface StudentDAO {
 

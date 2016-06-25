@@ -1,4 +1,4 @@
-package com.learning.spring.bean;
+package com.msrm.springframeworks.bean;
 
 public class Student {
 

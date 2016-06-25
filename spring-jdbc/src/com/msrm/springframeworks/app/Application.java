@@ -1,11 +1,11 @@
-package com.learning.spring.app;
+package com.msrm.springframeworks.app;
 
 import java.util.List;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.learning.spring.bean.Student;
-import com.learning.spring.dao.StudentDAO;
+import com.msrm.springframeworks.bean.Student;
+import com.msrm.springframeworks.dao.StudentDAO;
 
 public class Application {
 
