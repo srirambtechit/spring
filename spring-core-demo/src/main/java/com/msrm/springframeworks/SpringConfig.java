@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import com.msrm.springframeworks.bean.Report;
 
 @Configuration
-@ComponentScan(value = "com.jlearn.spring.annotation.bean")
+@ComponentScan(value = "com.msrm.springframeworks.bean")
 public class SpringConfig {
 
 	@Bean
