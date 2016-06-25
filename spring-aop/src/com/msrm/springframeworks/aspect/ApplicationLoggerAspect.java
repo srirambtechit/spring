@@ -20,42 +20,42 @@ import org.aspectj.lang.annotation.Pointcut;
 @Aspect
 public class ApplicationLoggerAspect {
 
-    @Pointcut("within(com.xyz.someapp.web..*)")
-    public void inWebLayer() {
-    }
+	@Pointcut("within(com.xyz.someapp.web..*)")
+	public void inWebLayer() {
+	}
 
-    @Pointcut("execution(* *(..))")
-    public void anyMatchPrdicate() {
-    }
+	@Pointcut("execution(* *(..))")
+	public void anyMatchPrdicate() {
+	}
 
-    @Pointcut("execution(public * *(..))")
-    public void anyPublicMethodPrdicate() {
-    }
+	@Pointcut("execution(public * *(..))")
+	public void anyPublicMethodPrdicate() {
+	}
 
-    @Pointcut("execution(public * set*(..))")
-    public void anyPublicSetterMethodPrdicate() {
-    }
+	@Pointcut("execution(public * set*(..))")
+	public void anyPublicSetterMethodPrdicate() {
+	}
 
-    @Pointcut("execution(public * get*(..))")
-    public void anyPublicGetterMethodPrdicate() {
-    }
+	@Pointcut("execution(public * get*(..))")
+	public void anyPublicGetterMethodPrdicate() {
+	}
 
-    @Pointcut("within(com.msrm.springframeworks.*)")
-    public void anyMethodWithinPackagePrdicate() {
-    }
+	@Pointcut("within(com.msrm.springframeworks.*)")
+	public void anyMethodWithinPackagePrdicate() {
+	}
 
-    @Pointcut("execution(* com.msrm.springframeworks.business.Calculator.*(..))")
-    public void calculatorPrdicate() {
-    }
+	@Pointcut("execution(* com.msrm.springframeworks.business.Calculator.*(..))")
+	public void calculatorPrdicate() {
+	}
 
-    @Before("calculatorPrdicate()")
-    public void printMethodEntryLoggerMessage(JoinPoint jp) {
-	System.out.println(jp.getSignature().getName() + " method execution starts");
-    }
+	@Before("calculatorPrdicate()")
+	public void printMethodEntryLoggerMessage(JoinPoint jp) {
+		System.out.println(jp.getSignature().getName() + " method execution starts");
+	}
 
-    @After("calculatorPrdicate()")
-    public void printMethodExitLoggerMessage(JoinPoint jp) {
-	System.out.println(jp.getSignature().getName() + " method execution ends");
-    }
+	@After("calculatorPrdicate()")
+	public void printMethodExitLoggerMessage(JoinPoint jp) {
+		System.out.println(jp.getSignature().getName() + " method execution ends");
+	}
 
 }
