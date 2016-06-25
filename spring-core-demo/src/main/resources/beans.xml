@@ -10,7 +10,7 @@
 		http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 
 	<!-- setter injection -->
-	<bean id="address" class="com.jlearn.spring.bean.Address">
+	<bean id="address" class="com.msrm.springframeworks.bean.Address">
 		<property name="id" value="100" />
 		<property name="doorNumber" value="1" />
 		<property name="street" value="Kamarajar salai main road" />
@@ -21,20 +21,20 @@
 	</bean>
 
 	<!-- setter injection with referencing another bean(here it is Address) -->
-	<bean id="employee" class="com.jlearn.spring.bean.Employee">
+	<bean id="employee" class="com.msrm.springframeworks.bean.Employee">
 		<property name="id" value="100000" />
 		<property name="name" value="Michael Jackson" />
 		<property name="address" ref="address" />
 	</bean>
 
 	<!-- constructor injection -->
-	<bean id="movieCnstr" class="com.jlearn.spring.bean.Movie" scope="singleton">
+	<bean id="movieCnstr" class="com.msrm.springframeworks.bean.Movie" scope="singleton">
 		<constructor-arg name="name" value="The Jungle Book" />
 		<constructor-arg name="theater" value="Satyam Palazzo" />
 	</bean>
 
 	<!-- setter injection -->
-	<bean id="movieSetter" class="com.jlearn.spring.bean.Movie">
+	<bean id="movieSetter" class="com.msrm.springframeworks.bean.Movie">
 		<property name="name" value="Iruthi Suttru" />
 		<property name="theater" value="PVR Cinemas Velachery" />
 	</bean>

@@ -10,9 +10,9 @@
 	<aop:aspectj-autoproxy />
 
 	<!-- Declaring beans -->
-	<bean id="calculatorBean" class="com.learning.spring.business.Calculator" />
+	<bean id="calculatorBean" class="com.msrm.springframeworks.business.Calculator" />
 
 	<!-- Declaring aspects -->
-	<bean id="loggerAspect" class="com.learing.spring.aspect.ApplicationLoggerAspect" />
+	<bean id="loggerAspect" class="com.msrm.springframeworks.aspect.ApplicationLoggerAspect" />
 
 </beans>  

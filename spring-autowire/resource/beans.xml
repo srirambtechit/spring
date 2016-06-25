@@ -9,13 +9,13 @@
 
 	<context:annotation-config />
 
-	<bean id="studentBean" class="com.learning.spring.bean.Student">
+	<bean id="studentBean" class="com.msrm.springframeworks.bean.Student">
 		<property name="id" value="1000" />
 		<property name="name" value="Sriram" />
 		<property name="email" value="sriram@gmail.com" />
 	</bean>
 
-	<bean id="address" class="com.learning.spring.bean.Address">
+	<bean id="address" class="com.msrm.springframeworks.bean.Address">
 		<property name="doorNumber" value="452" />
 		<property name="street" value="1st cross street" />
 		<property name="city" value="Chennai" />
