@@ -17,8 +17,8 @@ public class Application {
 
 		// Inserting a new record
 		Student student = new Student(0, "Vinoth", "Salem", "vin@gmail.com");
-//		System.out.println("Insert new record");
-//		studentDAO.save(student);
+		// System.out.println("Insert new record");
+		// studentDAO.save(student);
 
 		System.out.println("Update record");
 		// pass student record id to perform update

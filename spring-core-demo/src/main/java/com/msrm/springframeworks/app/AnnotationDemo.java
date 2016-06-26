@@ -8,7 +8,6 @@ import com.msrm.springframeworks.bean.Report;
 public class AnnotationDemo {
 
 	public static void main(String[] args) {
-
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfig.class);
 		Report report = ctx.getBean(Report.class);
 		System.out.println(report);
